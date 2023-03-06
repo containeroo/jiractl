@@ -1,0 +1,42 @@
+---
+project_name: jiractl
+before:
+  hooks:
+    - go mod tidy
+builds:
+  - main: ./main.go
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - amd64
+      - arm64
+      - arm
+brews:
+  - name: jiractl
+    tap:
+      owner: containeroo
+      name: homebrew-tap
+      token: "{{ .Env.TAP_GITHUB_TOKEN }}"
+    folder: Formula
+    homepage: https://containeroo.ch
+    description: A blazing fast CLI tool to do Jira stuff like a real hacker
+    license: GNU General Public License v3.0
+    test: |
+      system "#{bin}/jiractl version"
+    dependencies:
+      - name: go
+        type: optional
+    install: |-
+      bin.install "jiractl"
+
+      # Install bash completion
+      output = Utils.safe_popen_read(bin/"jiractl", "completion", "bash")
+      (bash_completion/"jiractl").write output
+
+      # Install zsh completion
+      output = Utils.safe_popen_read(bin/"jiractl", "completion", "zsh")
+      (zsh_completion/"_jiractl").write output
