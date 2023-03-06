@@ -13,7 +13,7 @@ var issuesListCmd = &cobra.Command{
 	Use:     "list [JQL-QUERY]",
 	Aliases: []string{"l"},
 	Short:   "List issues",
-	Args:    cobra.ExactArgs(1),
+	Args:    cobra.RangeArgs(0, 1),
 	Run: func(cmd *cobra.Command, args []string) {
 		jiraClient, err := internal.NewJiraClient()
 		if err != nil {
@@ -21,7 +21,14 @@ var issuesListCmd = &cobra.Command{
 			return
 		}
 
-		issues, _, _ := jiraClient.Issue.Search(context.Background(), args[0], nil)
+		var jql string
+		if len(args) == 0 {
+			jql = "assignee = currentUser() and resolution is empty"
+		} else {
+			jql = args[0]
+		}
+
+		issues, _, _ := jiraClient.Issue.Search(context.Background(), jql, nil)
 		tbl := internal.NewIssueListTable()
 
 		for _, issue := range issues {
