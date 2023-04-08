@@ -6,7 +6,7 @@ require (
 	github.com/andygrunwald/go-jira/v2 v2.0.0-20230214144750-9b2c3c12c4aa
 	github.com/fatih/color v1.14.1
 	github.com/rodaine/table v1.1.0
-	github.com/spf13/cobra v1.6.1
+	github.com/spf13/cobra v1.7.0
 )
 
 require (
