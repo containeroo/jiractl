@@ -3,7 +3,7 @@ module github.com/containeroo/jiractl
 go 1.19
 
 require (
-	github.com/andygrunwald/go-jira/v2 v2.0.0-20230214144750-9b2c3c12c4aa
+	github.com/andygrunwald/go-jira/v2 v2.0.0-20230325080157-2e11dffbdb9a
 	github.com/fatih/color v1.15.0
 	github.com/rodaine/table v1.1.0
 	github.com/spf13/cobra v1.7.0
@@ -11,7 +11,7 @@ require (
 
 require (
 	github.com/fatih/structs v1.1.0 // indirect
-	github.com/golang-jwt/jwt/v4 v4.4.2 // indirect
+	github.com/golang-jwt/jwt/v4 v4.5.0 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
