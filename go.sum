@@ -1,5 +1,5 @@
-github.com/andygrunwald/go-jira/v2 v2.0.0-20230325080157-2e11dffbdb9a h1:qSrg15WORClvHQfGe9RyFiDG52MeEpVj5qEs6O7QBE4=
-github.com/andygrunwald/go-jira/v2 v2.0.0-20230325080157-2e11dffbdb9a/go.mod h1:TrfsnL20VgD+KgEw4gbTYuSAPE8T1ZxjMCFBGgGvNvI=
+github.com/andygrunwald/go-jira/v2 v2.0.0-20240116150243-50d59fe116d6 h1:pb8RtP8VEWP/BX1M7Kk/AAIGtqThmahV4L/+VcIVcEc=
+github.com/andygrunwald/go-jira/v2 v2.0.0-20240116150243-50d59fe116d6/go.mod h1:TrfsnL20VgD+KgEw4gbTYuSAPE8T1ZxjMCFBGgGvNvI=
 github.com/cpuguy83/go-md2man/v2 v2.0.2/go.mod h1:tgQtvFlXSQOSOSIRvRPT7W67SCa46tRHOmNcaadrF8o=
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

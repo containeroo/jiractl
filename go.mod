@@ -3,7 +3,7 @@ module github.com/containeroo/jiractl
 go 1.19
 
 require (
-	github.com/andygrunwald/go-jira/v2 v2.0.0-20230325080157-2e11dffbdb9a
+	github.com/andygrunwald/go-jira/v2 v2.0.0-20240116150243-50d59fe116d6
 	github.com/fatih/color v1.15.0
 	github.com/rodaine/table v1.1.0
 	github.com/spf13/cobra v1.7.0
